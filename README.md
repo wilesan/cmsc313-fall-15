@@ -10,7 +10,7 @@ All code and supporting files for projects is in the projects/ folder.
 Since linux GL is 64 bits and we’ll be dealing only with 32 bit assembly in this class, you’ll need to build your code in a special way:
 
 ```
-	$ nasm -f elf -g -F stabs yourprogram.asm
+	$ nasm -f elf -g -F dwarf yourprogram.asm
 	$ ld -o yourprogram yourprogram.o -melf_i386
 	$ ./yourprogram
 ```
