@@ -16,6 +16,10 @@ start:
 	jmp 	exit
 	jmp 	short exit
 	jmp 	near exit
+
+	jmp		start
+	jmp		short start
+	jmp		near start
 exit:
 	mov 	ebx, 	0 	; exit code, 0=normal
 	mov 	eax, 	1 	; Exit.
