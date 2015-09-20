@@ -1,0 +1,26 @@
+     1                                  ; File: jmp.asm
+     2                                  ;
+     3                                  ; Demonstrating near and short jumps
+     4                                  ;
+     5                                  	section .text
+     6                                  	global _start
+     7 00000000 90                      _start:		nop
+     8                                  	; initialize
+     9                                  start:
+    10 00000001 B811000000              	mov 	eax, 	17 	; eax := 17
+    11 00000006 83F82A                  	cmp 	eax, 	42 	; 17 - 42 is ...
+    12 00000009 7D1A                    	jge 	exit 		; exit if 17 >= 42
+    13 0000000B 7D18                    	jge 	short exit
+    14 0000000D 0F8D12000000            	jge 	near exit
+    15                                  
+    16 00000013 EB10                    	jmp 	exit
+    17 00000015 EB0E                    	jmp 	short exit
+    18 00000017 E909000000              	jmp 	near exit
+    19                                  
+    20 0000001C EBE3                    	jmp		start
+    21 0000001E EBE1                    	jmp		short start
+    22 00000020 E9DCFFFFFF              	jmp		near start
+    23                                  exit:
+    24 00000025 BB00000000              	mov 	ebx, 	0 	; exit code, 0=normal
+    25 0000002A B801000000              	mov 	eax, 	1 	; Exit.
+    26 0000002F CD80                     	int 	080H 		; Call kernel.
