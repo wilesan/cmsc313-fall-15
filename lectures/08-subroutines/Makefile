@@ -11,11 +11,12 @@ LD=ld
 MAKE=make
 ASFLAGS=-f elf -g -F dwarf
 LDFLAGS=-melf_i386
+CFLAGS=-m32 -g
 .PREFIXES= .c .o .asm
 
 ASM_SOURCE=recurse.asm subroutine.asm
 
-ALL_TARGETS=recurse subroutine rep switch toupper2
+ALL_TARGETS=recurse subroutine rep switch toupper2 libc_example
 
 all: ${ALL_TARGETS}
 
@@ -49,6 +50,12 @@ recurse: recurse.o
 subroutine: subroutine.o
 	${LD} ${LDFLAGS} -o $@ $<
 
+libc_example.o: libc_example.asm
+	${AS} ${ASFLAGS} $< -o $@
+	
+libc_example: libc_example.o
+	${CC} ${CFLAGS} -o $@ $<
+	
 clean:
 	rm -f *.o ${ALL_TARGETS}
 
