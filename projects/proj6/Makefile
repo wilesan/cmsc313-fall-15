@@ -12,7 +12,7 @@ ASFLAGS=-f elf -g -F dwarf
 
 ALL_TARGETS=add_test_nostdlib
 
-C_SOURCE=sorter.c
+C_SOURCE=add_test.c
 
 ASM_SOURCE=adder.asm
 
