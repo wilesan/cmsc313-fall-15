@@ -16,7 +16,7 @@ int write(int fd, const void *buffer, unsigned int size);
 int adder(unsigned int num, ...);
 
 /* Some constants */
-#define STDOUT              0
+#define STDOUT              1
 
 /* Prints a number to STDOUT */
 void print_num(unsigned int num)
