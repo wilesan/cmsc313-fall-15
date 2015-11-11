@@ -1,0 +1,66 @@
+Total allocated entries: 10
+Total available entries: 8
+Addresses of available match's:
+  0x9283350
+  0x92832d8
+  0x9283260
+  0x92831e8
+  0x9283170
+  0x92830f8
+  0x9283080
+  0x9283008
+Total allocated entries: 10
+Total available entries: 10
+Addresses of available match's:
+  0x92833c8
+  0x9283440
+  0x9283350
+  0x92832d8
+  0x9283260
+  0x92831e8
+  0x9283170
+  0x92830f8
+  0x9283080
+  0x9283008
+Total allocated entries: 20
+Total available entries: 9
+Addresses of available match's:
+  0x9283878
+  0x9283800
+  0x9283788
+  0x9283710
+  0x9283698
+  0x9283620
+  0x92835a8
+  0x9283530
+  0x92834b8
+Total allocated entries: 20
+Total available entries: 9
+Addresses of available match's:
+  0x9283878
+  0x9283800
+  0x9283788
+  0x9283710
+  0x9283698
+  0x9283620
+  0x92835a8
+  0x9283530
+  0x92834b8
+Total allocated entries: 20
+Total available entries: 11
+Addresses of available match's:
+  0x9283440
+  0x92833c8
+  0x9283878
+  0x9283800
+  0x9283788
+  0x9283710
+  0x9283698
+  0x9283620
+  0x92835a8
+  0x9283530
+  0x92834b8
+Total allocated entries: 10
+Total available entries: 1
+Addresses of available match's:
+  0x92834b8
